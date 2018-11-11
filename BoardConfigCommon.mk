@@ -118,10 +118,10 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 # SELinux
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 
-# Lineage hardware
-ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
+# MK hardware
+ifneq ($(findstring mk, $(TARGET_PRODUCT)),)
 BOARD_HARDWARE_CLASS := \
-    hardware/samsung/lineagehw
+    hardware/samsung/mkhw
 endif
 
 # Releasetools
